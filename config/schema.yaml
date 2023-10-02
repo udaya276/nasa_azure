@@ -1,0 +1,112 @@
+columns:
+  - id: text
+  - unit_number: float
+  - time_in_cycles: float
+  - set_1: float
+  - set_2: float
+  - set_3: float
+  - sen_1: float
+  - sen_2: float
+  - sen_3: float
+  - sen_4: float
+  - sen_5: float
+  - sen_6: float
+  - sen_7: float
+  - sen_8: float
+  - sen_9: float
+  - sen_10: float
+  - sen_11: float
+  - sen_12: float
+  - sen_13: float
+  - sen_14: float
+  - sen_15: float
+  - sen_16: float
+  - sen_17: float
+  - sen_18: float
+  - sen_19: float
+  - sen_20: float
+  - sen_21: float
+database_columns:
+  - id
+  - unit_number
+  - time_in_cycles
+  - set_1
+  - set_2
+  - set_3
+  - sen_1
+  - sen_2
+  - sen_3
+  - sen_4
+  - sen_5
+  - sen_6
+  - sen_7
+  - sen_8
+  - sen_9
+  - sen_10
+  - sen_11
+  - sen_12
+  - sen_13
+  - sen_14
+  - sen_15
+  - sen_16
+  - sen_17
+  - sen_18
+  - sen_19
+  - sen_20
+  - sen_21
+dataframe_columns:
+  - unit_number
+  - time_in_cycles
+  - set_1
+  - set_2
+  - set_3
+  - sen_1
+  - sen_2
+  - sen_3
+  - sen_4
+  - sen_5
+  - sen_6
+  - sen_7
+  - sen_8
+  - sen_9
+  - sen_10
+  - sen_11
+  - sen_12
+  - sen_13
+  - sen_14
+  - sen_15
+  - sen_16
+  - sen_17
+  - sen_18
+  - sen_19
+  - sen_20
+  - sen_21
+drop_columns:
+  - id
+numerical_columns:
+  - unit_number
+  - time_in_cycles
+  - set_1
+  - set_2
+  - set_3
+  - sen_1
+  - sen_2
+  - sen_3
+  - sen_4
+  - sen_5
+  - sen_6
+  - sen_7
+  - sen_8
+  - sen_9
+  - sen_10
+  - sen_11
+  - sen_12
+  - sen_13
+  - sen_14
+  - sen_15
+  - sen_16
+  - sen_17
+  - sen_18
+  - sen_19
+  - sen_20
+  - sen_21
