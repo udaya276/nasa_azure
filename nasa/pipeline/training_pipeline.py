@@ -21,7 +21,7 @@ class TrainPipeline:
     def __init__(self):
         try:
             self.training_pipeline_config = TrainingPipelineConfig()
-            self.s3_sync = S3Sync()
+            #self.s3_sync = S3Sync()
         except Exception as e:
             raise SensorException(e, sys)
         
@@ -104,7 +104,7 @@ class TrainPipeline:
             return model_pusher_artifact
         except Exception as e:
             raise SensorException(e, sys)
-    
+    """
     def sync_artifact_dir_to_s3(self):
         try:
             aws_buket_url = f"s3://{TRAINING_BUCKET_NAME}/artifact/{self.training_pipeline_config.timestamp}"
@@ -118,7 +118,7 @@ class TrainPipeline:
             self.s3_sync.sync_folder_to_s3(folder = SAVED_MODEL_DIR,aws_buket_url=aws_buket_url)
         except Exception as e:
             raise SensorException(e,sys)
-    
+    """
     
     def run_pipeline(self):
         try:
@@ -136,12 +136,12 @@ class TrainPipeline:
             logging.info("run pipeline competed")
             TrainPipeline.is_pipeline_running = False
             logging.info("check s3 before")
-            self.sync_artifact_dir_to_s3()
+            #self.sync_artifact_dir_to_s3()
             logging.info("check s3 after")
-            self.sync_saved_model_dir_to_s3()
+            #self.sync_saved_model_dir_to_s3()
             logging.info("check s3 completed")
         except Exception as e:
-            self.sync_artifact_dir_to_s3()
+            #self.sync_artifact_dir_to_s3()
             TrainPipeline.is_pipeline_running = False
             raise SensorException(e, sys)
 
