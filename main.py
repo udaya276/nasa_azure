@@ -11,7 +11,7 @@ from fastapi import File
 from io import BytesIO
 import pickle
 from uvicorn import run as app_run
-
+import uvicorn
 
 
 
@@ -91,4 +91,4 @@ if __name__=="__main__":
     #training_pipeline = TrainPipeline()
     #training_pipeline.run_pipeline()
     #uvicorn.run(app, host='127.0.0.1', port=8080)
-    app_run(app, host='0.0.0.0', port=8080)
+    app_run(app, host='0.0.0.0', port=8000)
