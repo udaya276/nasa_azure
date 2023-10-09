@@ -64,7 +64,7 @@ async def upload_file(csv_file:UploadFile = File(...)):
         #return result
     except Exception as e:
         return Response(f"Error occured! {e}")
-
+"""
 @app.post("/uploadfile_predict/")
 async def upload_csv_file(file: UploadFile = File(...)):
     try:
@@ -85,8 +85,8 @@ async def upload_csv_file(file: UploadFile = File(...)):
         return df["RUL"]
     except Exception as e:
         return Response(f"Error occured! {e}")
-
-
+"""
+"""
 if __name__=="__main__":
     #training_pipeline = TrainPipeline()
     #training_pipeline.run_pipeline()
@@ -94,3 +94,4 @@ if __name__=="__main__":
     #app.run(app, host='0.0.0.0', port=8000)
     app_run(app, host='127.0.0.1', port=8000)
     #uvicorn main:app --reload
+"""
