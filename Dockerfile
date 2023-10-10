@@ -1,5 +1,5 @@
 # Choose our version of Python
-FROM python:3.8
+FROM python:3.8.16
 
 # Set up a working directory
 WORKDIR /app
